@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.link{
+  stroke: red;
+  stroke-width: 2px;
+}
+.node{
+  fill:green
+}
+.tooltip_div{
+  background-color: rgb(216, 216, 216);
+  width: 200px;
+  height: 300px;
+}
