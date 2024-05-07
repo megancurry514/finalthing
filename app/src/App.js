@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import BarChart from "./BarChart";
 
-function App() {
+const data = [
+  { value: 10 },
+  { value: 20 },
+  { value: 30 },
+  { value: 40 },
+  { value: 50 },
+];
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Interactive Bar Chart</h1>
+      <div style={{ width: 500, height: 300 }}>
+        <BarChart data={data} width={500} height={300} />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
